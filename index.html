@@ -1,145 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Gennady Badinov - Backend Developer specializing in Go and Python.">
+    <meta name="description" content="Gennady Badinov - Backend Developer specializing in Go and Python">
     <meta name="keywords"
         content="Gennady Badinov, Геннадий Бадинов, backend developer, Go, Golang, Python, developer, software engineer, technology, programming">
     <meta property="og:title" content="Gennady Badinov">
-    <meta property="og:description" content="Gennady Badinov - Backend Developer specializing in Go and Python.">
+    <meta property="og:description" content="Gennady Badinov - Backend Developer specializing in Go and Python">
     <meta property="og:url" content="https://gnnd.ru">
     <meta property="og:type" content="website">
 
     <title>Gennady Badinov</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         body {
-            background-color: #2d2d2d;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Roboto Mono', monospace;
+            text-align: left;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: flex-start;
             min-height: 100vh;
-            overflow: hidden;
-        }
-
-        .container {
-            width: 100%;
-            margin-top: 5vh;
-            padding: 0 20px;
-            box-sizing: border-box;
-            min-height: 100%;
+            margin: 0;
+            padding: 20px;
         }
 
         h1 {
-            font-size: 4rem;
-            font-weight: bold;
+            font-size: 2.5rem;
+            font-weight: 700;
         }
 
-        .icons a {
-            display: inline-block;
-            margin: 10px;
-        }
-
-        .icons img {
-            width: 40px;
-            height: 40px;
-            filter: brightness(0.8);
-            transition: transform 0.2s, filter 0.2s;
-            filter: invert(1);
-        }
-
-        .icons img:hover {
-            transform: scale(1.1);
-            filter: invert(1) brightness(1.2);
-        }
-
-        .about {
-            margin-top: 20px;
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+        .description {
+            max-width: 600px;
+            font-size: 1rem;
             line-height: 1.5;
-            opacity: 0.9;
+            margin-top: 20px;
+            color: #555;
+            font-weight: 400;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                margin-top: 2vh;
-            }
-
-            h1 {
-                font-size: 3rem;
-            }
-
-            .icons img {
-                width: 35px;
-                height: 35px;
-            }
-
-            .about {
-                font-size: 1.1rem;
-                margin-top: 15px;
-            }
+        .description strong {
+            color: #000;
+            font-weight: 700;
         }
 
-        @media (max-width: 480px) {
-            .container {
-                margin-top: 0vh;
-            }
+        .links {
+            display: inline;
+        }
 
-            h1 {
-                font-size: 2.5rem;
-            }
+        .links a {
+            background-color: #B4FB62;
+            color: #000;
+            padding: 1px 3px;
+            border-radius: 0px;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 0 0px 0 0;
+        }
 
-            .icons img {
-                width: 30px;
-                height: 30px;
-            }
+        .links a:hover {
+            background-color: #9ADF50;
+        }
 
-            .about {
-                font-size: 1rem;
-            }
+        ::selection {
+            background: #B4FB62;
+            color: #000;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Gennady Badinov</h1>
-        <div class="icons">
-            <a href="https://www.linkedin.com/in/gennady-badinov/" target="_blank">
-                <img src="assets/icons/linkedin.svg" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/gennadis" target="_blank">
-                <img src="assets/icons/github.svg" alt="GitHub">
-            </a>
-            <a href="https://t.me/gennad1s" target="_blank">
-                <img src="assets/icons/telegram.svg" alt="Telegram">
-            </a>
-            <a href="mailto:gennady.badinov@gmail.com">
-                <img src="assets/icons/email.svg" alt="Email">
-            </a>
-        </div>
-        <div class="about">
-            <p>
-                Hi there!<br>
-                As a backend developer with over 3 years of experience, I specialize in Go and Python.<br>
-                Solving interesting challenges, exploring new technologies, and staying updated with industry trends are
-                what excite me the most.<br>
-                Actively involved in the developer community, I attend meetups and conferences, mentor others, and
-                participate in hackathons.<br>
-                Always happy to discuss cool ideas and projects, feel free to reach out!
-            </p>
-        </div>
-    </div>
+    <p class="description">
+        <strong>Hey, I'm Gennady.</strong><br><br>
+        I'm a backend developer with over 3 years of experience, specializing in Go and Python.<br><br>
+        Currently working at <span class="links"><a href="https://cloud.ru" target="_blank">cloud.ru</a></span> — a
+        leading provider of cloud and AI technologies.<br><br>
+        I love solving interesting challenges, exploring new technologies, and keeping up with industry trends. Being an
+        active part of the developer community, I attend meetups, mentor others, and participate in
+        hackathons.<br><br>
+        Always happy to chat about cool ideas and projects. You can reach me on
+        <span class="links">
+            <a href="https://www.linkedin.com/in/gennady-badinov/" target="_blank">LinkedIn</a>,
+            <a href="https://github.com/gennadis" target="_blank">GitHub</a>,
+            <a href="https://t.me/gennad1s" target="_blank">Telegram</a>, or
+            <a href="mailto:gennady.badinov@gmail.com">Email</a>.
+        </span>
+    </p>
 </body>
 
 </html>
