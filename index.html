@@ -21,6 +21,7 @@
 
         .container {
             margin-top: 5vh;
+            padding: 0 20px;
         }
 
         h1 {
@@ -54,6 +55,45 @@
             margin-right: auto;
             line-height: 1.5;
             opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin-top: 2vh;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .icons img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .about {
+                font-size: 1.1rem;
+                margin-top: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin-top: 0vh;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .icons img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .about {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
