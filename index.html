@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gennady Badinov</title>
+    <style>
+        /* Dark Theme */
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            margin-top: 5vh;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .icons a {
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .icons img {
+            width: 50px;
+            height: 50px;
+            filter: brightness(0.8);
+            transition: transform 0.2s, filter 0.2s;
+            filter: invert(1);
+        }
+
+        .icons img:hover {
+            transform: scale(1.2);
+            filter: brightness(1);
+        }
+
+        .about {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gennady Badinov</h1>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/gennady-badinov/" target="_blank">
+                <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/gennadis" target="_blank">
+                <img src="assets/icons/github.svg" alt="GitHub">
+            </a>
+            <a href="https://t.me/gennad1s" target="_blank">
+                <img src="assets/icons/telegram.svg" alt="Telegram">
+            </a>
+            <a href="mailto:gennady.badinov@gmail.com">
+                <img src="assets/icons/email.svg" alt="Email">
+            </a>
+        </div>
+        <div class="about">
+            <p>Backend developer with 3+ years of experience in Go and Python. Passionate about solving challenges,
+                mentoring, and staying updated with industry trends.</p>
+        </div>
+    </div>
+</body>
+
+</html>
