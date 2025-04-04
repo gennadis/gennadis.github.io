@@ -38,7 +38,7 @@
   <style>
     html,
     body {
-      background-color: #1E1E1E;
+      background-color: #202224;
       color: #E0E0E0;
       display: flex;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', 'DejaVu Sans Mono', 'Andale Mono', 'Courier New', monospace;
@@ -64,12 +64,12 @@
       font-size: 1rem;
       line-height: 1.6;
       margin-top: 10px;
-      color: #A8A8A8;
+      color: #F0F1F2;
       font-weight: 400;
     }
 
     .description strong {
-      color: #D1D1D1;
+      color: #F0F1F2;
       font-weight: 500;
     }
 
@@ -78,7 +78,7 @@
     }
 
     .links a {
-      background-color: #5AA8D6;
+      background-color: #67ABCF;
       color: #0A0A0A;
       padding: 1px 3px;
       border-radius: 0px;
@@ -88,12 +88,21 @@
     }
 
     .links a:hover {
-      background-color: #4C91D4;
+      background-color: #367B99;
     }
 
     ::selection {
-      background-color: #A9E165;
+      background-color: #88C057;
       color: #0A0A0A;
+    }
+
+    .easter-egg {
+      opacity: 0;
+      color: #88C057;
+      margin-top: 20px;
+      transition: opacity 2s ease-in-out;
+      display: flex;
+      align-items: center;
     }
 
     /* Mobile styles */
@@ -125,7 +134,30 @@
         <a href="mailto:gennady.badinov@gmail.com">email</a>.
       </span>
     </p>
+    <p class="easter-egg" id="easter-egg">
+      It's dangerous to go alone! Take this. 🗡
+    </p>
   </div>
+  <!-- WARNING: excessive link hovering may lead to unexpected discoveries -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const content = document.querySelector(".content");
+      const easterEgg = document.getElementById("easter-egg");
+      let hoveredCount = 0;
+      const totalLinks = document.querySelectorAll(".links a").length;
+
+      content.addEventListener("mouseover", (event) => {
+        const target = event.target;
+        if (target.matches(".links a") && !target.dataset.hovered) {
+          target.dataset.hovered = "true";
+          hoveredCount++;
+          if (hoveredCount === totalLinks) {
+            easterEgg.style.opacity = "1";
+          }
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
