@@ -29,17 +29,16 @@ body {
 }
 
 .nav-link {
-  background-color: #67ABCF;
+  background-color: #88C057;
   color: #0A0A0A;
   padding: 1px 3px;
   border-radius: 0px;
   text-decoration: none;
-  font-weight: 400;
   margin: 0 1px 0 0;
 }
 
 .nav-link:hover {
-  background-color: #367B99;
+  background-color: #67953e;
 }
 
 .content {
