@@ -2,48 +2,59 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Understanding goroutines in Go with examples and internal details">
-    <meta name="keywords" content="golang, goroutines, goroutines internals, Go programming, backend">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Golang Goroutines - Gennady Badinov</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="Learn about goroutines in Go, including their behavior, examples, and internal details of how Go handles concurrency. By Gennady Badinov.">
+  <meta name="keywords"
+    content="golang, goroutines, concurrency, Go programming, goroutines internals, Go scheduler, backend, concurrency in Go">
+  <meta property="og:title" content="Golang Goroutines Explained - Gennady Badinov">
+  <meta property="og:description"
+    content="Understand goroutines in Go, how they work under the hood, and see practical examples to master concurrency.">
+  <meta property="og:url" content="https://gnnd.ru/devnotes/goroutines.html">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/x-icon" href="https://gnnd.ru/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <title>Golang Goroutines Explained - Gennady Badinov</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="../index.html" class="nav-link">home</a>
-        <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
-    </nav>
-    <div class="content">
-        <h1>Goroutines</h1>
-        <p class="description">
-            You can get the basics of goroutines in the official
-            <span class="links">
-                <a href="https://go.dev/tour/concurrency/1" target="_blank">Tour of Go: Goroutines</a>.
-            </span>
-        </p>
-        <p class="description">
-            For a detailed guide on how the Go scheduler works, check out this in-depth resource in Russian:
-            <span class="links">
-                <a href="https://www.youtube.com/watch?v=kedW1xO3Zbo" target="_blank">Планировщик Go — самый подробный
-                    гайд простым языком</a>.
-            </span>
-        </p>
-        <p class="description">
-            Source code:
-            <span class="links">
-                <a href="https://go.dev/src/runtime/proc.go" target="_blank">runtime/proc.go</a>
-            </span> on go.dev.
-        </p>
-        <p class="description">
-            Examples:
-            <span class="links">
-                <a href="https://gobyexample.com/goroutines" target="_blank">Goroutines</a>
-            </span> on Go by Example.
-        </p>
-    </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-link">home</a>
+    <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
+  </nav>
+  <div class="content">
+    <h1>Goroutines</h1>
+    <p class="description">
+      You can get the basics of goroutines in the official
+      <span class="links">
+        <a href="https://go.dev/tour/concurrency/1" target="_blank">Tour of Go: Goroutines</a>.
+      </span>
+    </p>
+    <p class="description">
+      For a detailed guide on how the Go scheduler works, check out this in-depth resource in Russian:
+      <span class="links">
+        <a href="https://www.youtube.com/watch?v=kedW1xO3Zbo" target="_blank">Планировщик Go — самый подробный
+          гайд простым языком</a>.
+      </span>
+    </p>
+    <p class="description">
+      Source code:
+      <span class="links">
+        <a href="https://go.dev/src/runtime/proc.go" target="_blank">runtime/proc.go</a>
+      </span> on go.dev.
+    </p>
+    <p class="description">
+      Examples:
+      <span class="links">
+        <a href="https://gobyexample.com/goroutines" target="_blank">Goroutines</a>
+      </span> on Go by Example.
+    </p>
+  </div>
 </body>
 
 </html>

@@ -2,40 +2,51 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Understanding errgroup in Go with examples and internal details">
-    <meta name="keywords" content="golang, errgroup, errgroup internals, Go programming, backend">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Golang Errgroup - Gennady Badinov</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="Learn about the errgroup package in Go for managing goroutines and implementing graceful shutdowns. By Gennady Badinov.">
+  <meta name="keywords"
+    content="golang, errgroup, errgroup package, managing goroutines, graceful shutdowns, Go programming, backend">
+  <meta property="og:title" content="Golang Errgroup: Managing Goroutines and Graceful Shutdowns - Gennady Badinov">
+  <meta property="og:description"
+    content="Understand the errgroup package in Go, including how it helps manage goroutines and implement graceful shutdowns for concurrent applications.">
+  <meta property="og:url" content="https://gnnd.ru/devnotes/errgroup.html">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/x-icon" href="https://gnnd.ru/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <title>Golang Errgroup: Managing Goroutines and Graceful Shutdowns - Gennady Badinov</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="../index.html" class="nav-link">home</a>
-        <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
-    </nav>
-    <div class="content">
-        <h1>Errgroup</h1>
-        <p class="description">
-            The errgroup package offers a clean and lightweight way to manage goroutines, with clear examples provided
-            in the official documentation.
-        </p>
-        <p class="description">
-            It's especially helpful for implementing graceful shutdowns, as shown in
-            <span class="links">
-                <a href="https://www.rudderstack.com/blog/implementing-graceful-shutdown-in-go"
-                    target="_blank">Implementing Graceful Shutdown in Go</a>
-            </span> on rudderstack.com.
-        </p>
-        <p class="description">
-            Source code:
-            <span class="links">
-                <a href="https://pkg.go.dev/golang.org/x/sync/errgroup" target="_blank">errgroup package</a>
-            </span> on go.dev.
-        </p>
-    </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-link">home</a>
+    <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
+  </nav>
+  <div class="content">
+    <h1>Errgroup</h1>
+    <p class="description">
+      The errgroup package offers a clean and lightweight way to manage goroutines, with clear examples provided
+      in the official documentation.
+    </p>
+    <p class="description">
+      It's especially helpful for implementing graceful shutdowns, as shown in
+      <span class="links">
+        <a href="https://www.rudderstack.com/blog/implementing-graceful-shutdown-in-go" target="_blank">Implementing
+          Graceful Shutdown in Go</a>
+      </span> on rudderstack.com.
+    </p>
+    <p class="description">
+      Source code:
+      <span class="links">
+        <a href="https://pkg.go.dev/golang.org/x/sync/errgroup" target="_blank">errgroup package</a>
+      </span> on go.dev.
+    </p>
+  </div>
 </body>
 
 </html>

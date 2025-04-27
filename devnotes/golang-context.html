@@ -2,41 +2,53 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Understanding context in Go with examples and internal details">
-    <meta name="keywords" content="golang, context, context internals, Go programming, backend">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Golang Context - Gennady Badinov</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="Learn about the Context package in Go, how to use it for managing concurrency, and its internals. By Gennady Badinov.">
+  <meta name="keywords"
+    content="golang, context, context package, context internals, Go concurrency, Go programming, backend">
+  <meta property="og:title" content="Golang Context - Gennady Badinov">
+  <meta property="og:description"
+    content="Understand how the Context package works in Go for managing cancellation signals, deadlines, and request-scoped values in concurrent applications.">
+  <meta property="og:url" content="https://gnnd.ru/devnotes/context.html">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/x-icon" href="https://gnnd.ru/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <title>Golang Context - Gennady Badinov</title>
 </head>
 
+
 <body>
-    <nav class="navbar">
-        <a href="../index.html" class="nav-link">home</a>
-        <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
-    </nav>
-    <div class="content">
-        <h1>Context</h1>
-        <p class="description">
-            Official blog post on using Context for concurrency control in Go:
-            <span class="links">
-                <a href="https://go.dev/blog/context" target="_blank">Go Concurrency Patterns: Context</a>.
-            </span>
-        </p>
-        <p class="description">
-            Source code:
-            <span class="links">
-                <a href="https://pkg.go.dev/context" target="_blank">context package</a>
-            </span> on go.dev.
-        </p>
-        <p class="description">
-            Examples:
-            <span class="links">
-                <a href="https://gobyexample.com/context" target="_blank">Context</a>
-            </span> on Go by Example.
-        </p>
-    </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-link">home</a>
+    <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
+  </nav>
+  <div class="content">
+    <h1>Context</h1>
+    <p class="description">
+      Official blog post on using Context for concurrency control in Go:
+      <span class="links">
+        <a href="https://go.dev/blog/context" target="_blank">Go Concurrency Patterns: Context</a>.
+      </span>
+    </p>
+    <p class="description">
+      Source code:
+      <span class="links">
+        <a href="https://pkg.go.dev/context" target="_blank">context package</a>
+      </span> on go.dev.
+    </p>
+    <p class="description">
+      Examples:
+      <span class="links">
+        <a href="https://gobyexample.com/context" target="_blank">Context</a>
+      </span> on Go by Example.
+    </p>
+  </div>
 </body>
 
 </html>

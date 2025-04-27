@@ -2,43 +2,53 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Understanding defer, panic, recover in Go with examples and internal details">
-    <meta name="keywords" content="golang, defer, panic, recover, Go programming, backend">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Golang Defer, Panic, Recover - Gennady Badinov</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="Learn about defer, panic, and recover in Go, including how they handle control flow, error management, and program execution. By Gennady Badinov.">
+  <meta name="keywords" content="golang, defer, panic, recover, control flow, error handling, Go programming, backend">
+  <meta property="og:title" content="Golang Defer, Panic, Recover - Gennady Badinov">
+  <meta property="og:description"
+    content="Understand the mechanisms of defer, panic, and recover in Go, and how they are used to manage control flow, errors, and execution flow in Go applications.">
+  <meta property="og:url" content="https://gnnd.ru/devnotes/defer-panic-recover.html">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/x-icon" href="https://gnnd.ru/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <title>Golang Defer, Panic, Recover - Gennady Badinov</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="../index.html" class="nav-link">home</a>
-        <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
-    </nav>
-    <div class="content">
-        <h1>Defer, Panic, Recover</h1>
-        <p class="description">
-            Official Go blog post:
-            <span class="links">
-                <a href="https://go.dev/blog/defer-panic-and-recover" target="_blank">Defer, Panic, and Recover</a>.
-            </span>
-        </p>
-        <p class="description">
-            Source code:
-            <span class="links">
-                <a href="https://go.dev/src/runtime/panic.go" target="_blank">runtime/panic.go</a>
-            </span> on go.dev.
-        </p>
-        <p class="description">
-            Examples:
-            <span class="links">
-                <a href="https://gobyexample.com/defer" target="_blank">Defer</a>,
-                <a href="https://gobyexample.com/panic" target="_blank">Panic</a>,
-                <a href="https://gobyexample.com/recover" target="_blank">Recover</a>
-            </span> on Go by Example.
-        </p>
-    </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-link">home</a>
+    <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
+  </nav>
+  <div class="content">
+    <h1>Defer, Panic, Recover</h1>
+    <p class="description">
+      Official Go blog post:
+      <span class="links">
+        <a href="https://go.dev/blog/defer-panic-and-recover" target="_blank">Defer, Panic, and Recover</a>.
+      </span>
+    </p>
+    <p class="description">
+      Source code:
+      <span class="links">
+        <a href="https://go.dev/src/runtime/panic.go" target="_blank">runtime/panic.go</a>
+      </span> on go.dev.
+    </p>
+    <p class="description">
+      Examples:
+      <span class="links">
+        <a href="https://gobyexample.com/defer" target="_blank">Defer</a>,
+        <a href="https://gobyexample.com/panic" target="_blank">Panic</a>,
+        <a href="https://gobyexample.com/recover" target="_blank">Recover</a>
+      </span> on Go by Example.
+    </p>
+  </div>
 </body>
 
 </html>

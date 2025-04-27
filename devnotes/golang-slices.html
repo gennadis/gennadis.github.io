@@ -2,61 +2,72 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Understanding slices in Go with examples and internal details">
-    <meta name="keywords" content="golang, slices, slices internals, Go programming, backend">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Golang Slices - Gennady Badinov</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="Learn about slices in Go, their behavior, internals, and how to use them effectively with examples and tutorials. By Gennady Badinov.">
+  <meta name="keywords"
+    content="golang, slices, slice internals, Go programming, backend, slices tutorial, Go slice examples">
+  <meta property="og:title" content="Golang Slices Explained - Gennady Badinov">
+  <meta property="og:description"
+    content="Understand Go slices with deep dives into how they work, along with practical examples. Perfect for backend developers.">
+  <meta property="og:url" content="https://gnnd.ru/devnotes/slices.html">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/x-icon" href="https://gnnd.ru/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <title>Golang Slices Explained - Gennady Badinov</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="../index.html" class="nav-link">home</a>
-        <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
-    </nav>
-    <div class="content">
-        <h1>Slices</h1>
-        <p class="description">
-            Slices are super important in Go. If you're just starting out, the
-            <span class="links">
-                <a href="https://go.dev/tour/moretypes/7" target="_blank">Tour of Go: Slices</a>
-            </span> is a great first stop.
-        </p>
-        <p class="description">
-            If you want to really understand slices — how they work under the hood and why they behave the way they do —
-            the Go blog has two fantastic posts:
-            <span class="links">
-                <a href="https://go.dev/blog/slices-intro" target="_blank">Slices Intro</a>
-            </span> and
-            <span class="links">
-                <a href="https://go.dev/blog/slices" target="_blank">Slices</a>.
-            </span>
-        </p>
-        <p class="description">
-            For Russian speakers, here's a really good video that explains slices:
-            <span class="links">
-                <a href="https://www.youtube.com/watch?v=10LW7NROfOQ" target="_blank">GoLang Slice в деталях, простым
-                    языком</a>.
-            </span>
-        </p>
-        <p class="description">
-            Source code:
-            <span class="links">
-                <a href="https://go.dev/src/runtime/slice.go" target="_blank">runtime/slice.go</a>
-            </span> on go.dev.
-        </p>
-        <p class="description">
-            Examples:
-            <span class="links">
-                <a href="https://gobyexample.com/arrays" target="_blank">Arrays</a>
-            </span> and
-            <span class="links">
-                <a href="https://gobyexample.com/slices" target="_blank">Slices</a>
-            </span> on Go by Example.
-        </p>
-    </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-link">home</a>
+    <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
+  </nav>
+  <div class="content">
+    <h1>Slices</h1>
+    <p class="description">
+      Slices are super important in Go. If you're just starting out, the
+      <span class="links">
+        <a href="https://go.dev/tour/moretypes/7" target="_blank">Tour of Go: Slices</a>
+      </span> is a great first stop.
+    </p>
+    <p class="description">
+      If you want to really understand slices — how they work under the hood and why they behave the way they do —
+      the Go blog has two fantastic posts:
+      <span class="links">
+        <a href="https://go.dev/blog/slices-intro" target="_blank">Slices Intro</a>
+      </span> and
+      <span class="links">
+        <a href="https://go.dev/blog/slices" target="_blank">Slices</a>.
+      </span>
+    </p>
+    <p class="description">
+      For Russian speakers, here's a really good video that explains slices:
+      <span class="links">
+        <a href="https://www.youtube.com/watch?v=10LW7NROfOQ" target="_blank">GoLang Slice в деталях, простым
+          языком</a>.
+      </span>
+    </p>
+    <p class="description">
+      Source code:
+      <span class="links">
+        <a href="https://go.dev/src/runtime/slice.go" target="_blank">runtime/slice.go</a>
+      </span> on go.dev.
+    </p>
+    <p class="description">
+      Examples:
+      <span class="links">
+        <a href="https://gobyexample.com/arrays" target="_blank">Arrays</a>
+      </span> and
+      <span class="links">
+        <a href="https://gobyexample.com/slices" target="_blank">Slices</a>
+      </span> on Go by Example.
+    </p>
+  </div>
 </body>
 
 </html>

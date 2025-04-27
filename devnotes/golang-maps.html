@@ -2,54 +2,64 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Understanding maps in Go with examples and internal details">
-    <meta name="keywords" content="golang, maps, map internals, Go programming, backend">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Golang Maps - Gennady Badinov</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="Learn about maps in Go, how they work with examples, and their internal implementation details. By Gennady Badinov.">
+  <meta name="keywords" content="golang, maps, map internals, Go programming, backend, map tutorial, Go map examples">
+  <meta property="og:title" content="Golang Maps Explained - Gennady Badinov">
+  <meta property="og:description"
+    content="Understand Go maps, including how they work internally, practical examples of usage, and deep dives into their performance.">
+  <meta property="og:url" content="https://gnnd.ru/devnotes/maps.html">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/x-icon" href="https://gnnd.ru/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <title>Golang Maps Explained - Gennady Badinov</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="../index.html" class="nav-link">home</a>
-        <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
-    </nav>
-    <div class="content">
-        <h1>Maps</h1>
-        <p class="description">
-            A great place to start is the
-            <span class="links">
-                <a href="https://go.dev/tour/moretypes/19" target="_blank">Tour of Go: Maps</a>.
-            </span>It's short, clear, and beginner-friendly.
-        </p>
-        <p class="description">
-            The Go team has a great blog post that explains maps in more detail:
-            <span class="links">
-                <a href="https://go.dev/blog/maps" target="_blank">Go maps in action</a>.
-            </span>
-        </p>
-        <p class="description">
-            There's also a nice deep dive video in Russian:
-            <span class="links">
-                <a href="https://www.youtube.com/watch?v=P_SXTUiA-9Y" target="_blank">Как на самом деле устроен тип Map
-                    в Golang?</a>.
-            </span>
-        </p>
-        <p class="description">
-            Source code:
-            <span class="links">
-                <a href="https://go.dev/src/runtime/map.go" target="_blank">runtime/map.go</a>
-            </span> on go.dev.
-        </p>
-        <p class="description">
-            Examples:
-            <span class="links">
-                <a href="https://gobyexample.com/maps" target="_blank">Maps</a>
-            </span> on Go by Example.
-        </p>
-    </div>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-link">home</a>
+    <a href="../devnotes.html" class="nav-link">devnotes &lt;- </a>
+  </nav>
+  <div class="content">
+    <h1>Maps</h1>
+    <p class="description">
+      A great place to start is the
+      <span class="links">
+        <a href="https://go.dev/tour/moretypes/19" target="_blank">Tour of Go: Maps</a>.
+      </span>It's short, clear, and beginner-friendly.
+    </p>
+    <p class="description">
+      The Go team has a great blog post that explains maps in more detail:
+      <span class="links">
+        <a href="https://go.dev/blog/maps" target="_blank">Go maps in action</a>.
+      </span>
+    </p>
+    <p class="description">
+      There's also a nice deep dive video in Russian:
+      <span class="links">
+        <a href="https://www.youtube.com/watch?v=P_SXTUiA-9Y" target="_blank">Как на самом деле устроен тип Map
+          в Golang?</a>.
+      </span>
+    </p>
+    <p class="description">
+      Source code:
+      <span class="links">
+        <a href="https://go.dev/src/runtime/map.go" target="_blank">runtime/map.go</a>
+      </span> on go.dev.
+    </p>
+    <p class="description">
+      Examples:
+      <span class="links">
+        <a href="https://gobyexample.com/maps" target="_blank">Maps</a>
+      </span> on Go by Example.
+    </p>
+  </div>
 </body>
 
 </html>
